@@ -1,9 +1,10 @@
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 class matika {
+    Scanner input = new Scanner(System.in);
     public void prumer(){
-        Scanner input = new Scanner(System.in);
         System.out.println("Zadejte počet číslic");
 
         double[] pole = new double[input.nextInt() + 1];
@@ -24,5 +25,16 @@ class matika {
             }
 
         }while (pole.length != i);
+    }
+    public void delitelnost(){
+        ArrayList<Double> vysledky = new ArrayList<Double>();
+        System.out.println("Zadejte číslo u kterého chcete zjístit dělitelnost.");
+        double x = input.nextDouble();
+        for (double i =  0; i <= x; i++){
+            if(x%i == 0){
+                vysledky.add(i);
+            }
+        }
+        System.out.println(vysledky);
     }
 }
