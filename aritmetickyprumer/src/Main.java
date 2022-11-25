@@ -9,7 +9,7 @@ public class Main {
         String s = scan.nextLine();
         if (s.equalsIgnoreCase("delitelnost")){
             obj.delitelnost();
-        } else if (s.equalsIgnoreCase("delitelnost")){
+        } else if (s.equalsIgnoreCase("prumerpr")){
             obj.prumer();
         }else{
             System.out.println(b);
