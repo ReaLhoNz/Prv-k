@@ -1,40 +1,29 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        double x1;
-        double x2;
-        double a;
-        double b;
-        double c;
-        double d;
+    static double a;
+     static double b;
+     static double c;
+     static  double d;
+     static double x1;
+     static double x2;
 
-        Scanner s = new Scanner(System.in);
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        Methods pepa = new Methods();
+
 
         System.out.println("Zadejte parametr A");
-         a = s.nextDouble();
-        System.out.println("Zadejte paramet B");
-         b = s.nextDouble();
-        System.out.println("Zadejte parametr C");
-         c = s.nextDouble();
-
-         d = b*b-4*a*c;
-        System.out.println("d = " + d);
-
-        if (d == 0){
-
-            x1 = -b / (2*a);
-            System.out.println(x1);
-        }
-
-        else if(d > 0){
-            System.out.println("ahoj");
-            x1 = (-b+Math.sqrt(d) )/ (2*a);
-            x2 = (-b-Math.sqrt(d)) / (2*a);
-            System.out.println(x1);
-            System.out.print(x2);
-        } else{
-            System.out.println("nelze v R vyřešit");
+        a = input.nextDouble();
+        System.out.println("Zadejte parametr B");
+        b = input.nextDouble();
+        System.out.println("zadejte parametr C");
+        c = input.nextDouble();
+        pepa.input();
+        pepa.vypocet0();
+        System.out.println(x1);
+        if (x2 != 0){
+            System.out.println(x2);
         }
 
     }
