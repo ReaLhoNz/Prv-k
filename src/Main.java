@@ -42,7 +42,7 @@ public class Main {
             }
 
         }
-        c +=1;
+        c = c +1;
         System.out.println("elf on position: " + c + " is holding most calories: "
                 + maximum);
 
