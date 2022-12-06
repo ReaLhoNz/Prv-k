@@ -31,7 +31,7 @@ class Methods { Scanner input = new Scanner(System.in);
     Double maximum = calories.get(0);
 
         for (u = 1; u < calories.size(); u++) {
-        if (maximum < calories.get(u)) {
+        if (maximum < calories.get(u)){
             maximum = calories.get(u);
             c++;
         }
